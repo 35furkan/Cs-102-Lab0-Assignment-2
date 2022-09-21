@@ -58,4 +58,14 @@ public class Application {
     }
 
 
+
+    public int[] findAverage() {
+        
+    }
+
+    public int[] differenceFromAverage(int[] intArray) {
+        int[] differenceFromAverage = ;
+
+        return differenceFromAverage;
+    }
 }
