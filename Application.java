@@ -40,4 +40,22 @@ public class Application {
         }
         return max;
     }
+
+    public static int findTheSumOfEvenIndexes ( int[] arrayToFindSum ){
+        int result = 0;
+        for (int i = 0; i < arrayToFindSum.length; i += 2){
+            result += arrayToFindSum[i];
+        }
+        return result;
+    }
+
+    public static int findTheSumOfOddIndexes ( int[] arrayToFindSum ){
+        int result = 0;
+        for (int i = 1; i < arrayToFindSum.length; i += 2){
+            result += arrayToFindSum[i];
+        }
+        return result;
+    }
+
+
 }
