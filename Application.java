@@ -1,3 +1,7 @@
+
+import java.util.Random;
+import java.util.Scanner;
+
 public class Application {
     
     public static void main(String[] args) {
@@ -14,5 +18,26 @@ public class Application {
         for (int i = 0; i < arraySize; i++) {
             randArr[i] = r.nextInt(101);
         }
+        
+    }
+    public int findMin(int[] randArr){
+        int min = Integer.MAX_VALUE;
+        for(int i= 0; i<randArr.length;i++){
+            if(randArr[i]<min)
+            min = randArr[i];
+            
+
+        }
+        return min;
+    }
+    public int findMax(int[] randArr){
+        int max = Integer.MIN_VALUE;
+        for(int i= 0; i<randArr.length;i++){
+            if(randArr[i]>max)
+            max = randArr[i];
+            
+
+        }
+        return max;
     }
 }
