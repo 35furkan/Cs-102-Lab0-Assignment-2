@@ -58,14 +58,32 @@ public class Application {
     }
 
 
-
-    public int[] findAverage() {
+    public int findAverage(int[] intArray) {
         
+        int average;
+        int sum = 0;
+
+        for (int i = 0; i < intArray.length; i++) {
+            sum += intArray[i];
+        }
+
+        average = sum / intArray.length;
+
+        return average;
     }
 
     public int[] differenceFromAverage(int[] intArray) {
-        int[] differenceFromAverage = ;
+        int[] differenceFromAverage = new int[intArray.length];
+        
+        int average = findAverage(intArray);
+
+        for (int i = 0; i < intArray.length; i++) {
+            differenceFromAverage[i] = intArray[i] - average;
+        }
 
         return differenceFromAverage;
     }
+
+
 }
+
